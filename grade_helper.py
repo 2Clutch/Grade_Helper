@@ -1,6 +1,7 @@
-x = 2
-y = 7
-z = 10
+def website(font, background_color, font_size, font_color):
+    print 'font:', font
+    print 'bg:', background_color
+    print 'Font size:', font_size
+    print 'Font color:', font_color
 
-if x < y:
-    print(str(x) + str(" is less than ")+ str(y))
+website('TNR', 'White', '11', 'Black')
