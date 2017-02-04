@@ -1,7 +1,27 @@
-def website(font, background_color, font_size, font_color):
-    print 'font:', font
-    print 'bg:', background_color
-    print 'Font size:', font_size
-    print 'Font color:', font_color
+class calculator:
 
-website('TNR', 'White', '11', 'Black')
+    def plus(x,y):                  # addition method
+        answer = x + y
+        print answer
+
+    def minus(x,y):                 # substraction method
+        answer = x - y
+        print answer
+
+    def times(x,y):                 # multiplication method
+        answer = x * y
+        print answer
+
+    def by(x,y):                    # division method
+        answer = x / y
+        print answer
+
+calculator.plus(25,5)
+
+calculator.minus(25,5)
+
+calculator.times(25,5)
+
+calculator.by(25,5)
+
+
