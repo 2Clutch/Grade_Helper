@@ -2,7 +2,6 @@ teacher = {"Doe":"0@1!2"}
 
 def main():
     print("""
-
     Welcome to Grade Helper
 
     [1] - Enter Grades
@@ -29,5 +28,16 @@ def main():
 login = input("Username: ")
 passw = input("Password: ")
 
-while True:
-    main()
+if login in teacher:
+
+    if teacher[login] == passw:
+        print("Welcome,", login)
+
+        while True:
+            main()
+
+    else:
+        print("Invalid Password. You should try again sometimes.")
+
+else:
+    print("Invalid Username. You should never try again! Not now. Not ever!!")
