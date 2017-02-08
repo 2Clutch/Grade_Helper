@@ -1,3 +1,5 @@
+teacher = {"Doe":"0@1!2"}
+
 def main():
     print("""
 
@@ -23,6 +25,9 @@ def main():
 
     else:
         print("Sorry, but your choice wasn't valid. Please try again.")
+
+login = input("Username: ")
+passw = input("Password: ")
 
 while True:
     main()
