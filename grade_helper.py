@@ -7,6 +7,19 @@ studentDatabase = {"Andrea": [96, 88, 99],
                    "Qri": [88, 82, 78],
                    "Alaysia":[73, 72, 72]}
 
+def enterGrades():
+    nameToEnter = input("Student Name: ")
+    gradeToEnter = input("Grade: ")
+
+    if nameToEnter in studentDatabase:
+        print("Adding Grade ...")
+        studentDatabase[nameToEnter].append(gradeToEnter)
+
+    else:
+        print("Student does not exist.")
+
+    print(studentDatabase)
+
 def main():
     print("""
     Welcome to Grade Helper
@@ -21,7 +34,7 @@ def main():
     decision = input("What will you be working on today? (Enter a number): \n")
 
     if decision == "1":
-        print("1")
+        enterGrades()
 
     elif decision == "2":
         print("2")
