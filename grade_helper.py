@@ -1,5 +1,12 @@
 teacher = {"Doe":"0@1!2"}
 
+# grades were assigned using a random number generator
+studentDatabase = {"Andrea": [96, 88, 99],
+                   "Alex": [86, 92, 78],
+                   "Jericka": [72, 74, 75],
+                   "Qri": [88, 82, 78],
+                   "Alaysia":[73, 72, 72]}
+
 def main():
     print("""
     Welcome to Grade Helper
