@@ -1,11 +1,13 @@
+from statistics import mean as m
+
 teacher = {"Doe":"0@1!2"}
 
 # grades were assigned using a random number generator
-studentDatabase = {"Andrea": [96, 88, 99],
-                   "Alexandra": [86, 92, 78],
-                   "Jericka": [72, 74, 75],
-                   "Qri": [88, 82, 78],
-                   "Alaysia":[73, 72, 72]}
+studentDatabase = {"Andrea": [90, 88, 89],
+                   "Alexandra": [95, 75, 79],
+                   "Jericka": [92, 79, 81],
+                   "Qri": [85, 85, 85],
+                   "Alaysia":[96, 74, 100]}
 
 def enterGrades():
     nameToEnter = input("Student Name: ")
@@ -32,6 +34,13 @@ def removeStudent():
 
     print(studentDatabase)
 
+def gradeAverage():
+    for student in studentDatabase:
+        gradeList = studentDatabase[student]
+        avg = m(gradeList)
+
+        print(student, "has a grade average of", avg)
+
 def main():
     print("""
     Welcome to Grade Helper
@@ -52,7 +61,7 @@ def main():
         removeStudent()
 
     elif decision == "3":
-        print("3")
+        gradeAverage()
 
     elif decision == "4":
         exit()
