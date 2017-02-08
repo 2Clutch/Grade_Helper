@@ -54,6 +54,9 @@ def main():
     elif decision == "3":
         print("3")
 
+    elif decision == "4":
+        exit()
+
     else:
         print("Sorry, but your choice wasn't valid. Please try again.")
 
