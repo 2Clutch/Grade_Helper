@@ -11,7 +11,7 @@ def main():
 
     """)
 
-    decision = input("What will you be working on today? (Enter a number): ")
+    decision = input("What will you be working on today? (Enter a number): \n")
 
     if decision == "1":
         print("1")
