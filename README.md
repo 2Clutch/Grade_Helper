@@ -1,4 +1,4 @@
 # grade_helper
 
-helping teachers calculate grade average for their
-students in a given set of classes 
+helping teachers calculate grade averages for their
+students in a given class
