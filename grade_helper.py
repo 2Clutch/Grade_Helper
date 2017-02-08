@@ -1,27 +1,14 @@
-class calculator:
+def main():
+    print("""
 
-    def plus(x,y):                  # addition method
-        answer = x + y
-        print answer
+    Welcome to Grade Helper
 
-    def minus(x,y):                 # substraction method
-        answer = x - y
-        print answer
+    [1] - Enter Grades
+    [2] - Remove Student
+    [3] - Grade Average
+    [4] - Exit
 
-    def times(x,y):                 # multiplication method
-        answer = x * y
-        print answer
+    """)
+    action = input("What will you be working on today? (Enter a number): ")
 
-    def by(x,y):                    # division method
-        answer = x / y
-        print answer
-
-calculator.plus(25,5)
-
-calculator.minus(25,5)
-
-calculator.times(25,5)
-
-calculator.by(25,5)
-
-
+main()
