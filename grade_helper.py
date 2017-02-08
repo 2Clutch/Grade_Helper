@@ -2,7 +2,7 @@ teacher = {"Doe":"0@1!2"}
 
 # grades were assigned using a random number generator
 studentDatabase = {"Andrea": [96, 88, 99],
-                   "Alex": [86, 92, 78],
+                   "Alexandra": [86, 92, 78],
                    "Jericka": [72, 74, 75],
                    "Qri": [88, 82, 78],
                    "Alaysia":[73, 72, 72]}
@@ -14,6 +14,18 @@ def enterGrades():
     if nameToEnter in studentDatabase:
         print("Adding Grade ...")
         studentDatabase[nameToEnter].append(gradeToEnter)
+
+    else:
+        print("Student does not exist.")
+
+    print(studentDatabase)
+
+def removeStudent():
+    nameToRemove = input("Which student would you like to remove from the database? \n")
+
+    if nameToRemove in studentDatabase:
+        print("Removing Student ...")
+        del studentDatabase[nameToRemove]
 
     else:
         print("Student does not exist.")
@@ -37,7 +49,7 @@ def main():
         enterGrades()
 
     elif decision == "2":
-        print("2")
+        removeStudent()
 
     elif decision == "3":
         print("3")
