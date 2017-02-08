@@ -1,4 +1,3 @@
 # grade_helper
 
-helping teachers calculate grade averages for their
-students in a given class
+basic program a teach could potentially use to calculate the grade averages of his students
