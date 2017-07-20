@@ -9,6 +9,10 @@ studentDatabase = {"Andrea": [90, 88, 89],
                    "Qri": [85, 85, 85],
                    "Alaysia":[96, 74, 100]}
 
+# add option where test grade has to be entered for every student
+# if only one student's grade is entered, other automatically get a zero
+# add an option allowing teacher to modify grades whenever they would like
+
 def enterGrades():
     nameToEnter = input("Student Name: ")
     gradeToEnter = input("Grade: ")
@@ -27,6 +31,7 @@ def removeStudent():
 
     if nameToRemove in studentDatabase:
         print("Removing Student ...")
+        print("Please understand this is not reversible. Thank you!")
         del studentDatabase[nameToRemove]
 
     else:
@@ -40,6 +45,10 @@ def gradeAverage():
         avg = m(gradeList)
 
         print(student, "has a grade average of", avg)
+
+        # throwing error when one student has more grades than others
+        # will have to define test case for that scenario
+        # gradeAverage should be able to run independently regardless of the other students number of grades
 
 def main():
     print("""
